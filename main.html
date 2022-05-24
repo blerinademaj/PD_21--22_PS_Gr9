@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script >
+
+
+    $(document).ready(function() {
+
+
+        $('#contact').on('click', function() {
+            alert("Mesazhi Alert 1")
+            // window.location.href = "login.html";
+            $(location).attr('href','http://localhost:3000');
+
+        });
+
+        $('#video-call').on('click', function() {
+            alert("Mesazhi alert 2")
+            // window.location.href = "login.html";
+            $(location).attr('href','http://localhost:5000');
+            // window.location= "room.ejs";
+        });
+
+    });
+
+
+</script>
+
+<style type="text/css">
+    body {
+        margin: 0;
+        font-size: 20px;
+        height: 100%;
+        background: url("main.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+ #video-call{
+     margin: 500px;
+     border: none;
+     border-radius: 25px;
+     padding: 25px;
+     color: darkslateblue;
+     font-size: 20px;
+
+     margin-left: 659px;
+     margin-bottom: 500px;
+     margin-right: 361px;
+     margin-top: 232px;
+ }
+ #contact{
+     border: none;
+     border-radius: 25px;
+     padding: 25px;
+     color: darkslateblue;
+     font-size: 20px;
+ }
+ p{
+ margin-left: 600px;
+
+     color: rgb(255 108 155);
+     font-size: 50px;
+
+
+ }
+
+</style>
+
+
+
+<body>
+
+<!-- Start Navbar -->
+
+<p>Ju lutem zgjidhni <br/> mënyrën që dëshironi të komunikoni !</p>
+
+
+    <button id="video-call">Video</button>
+    <button id="contact">Kontakt</button>
+
+
+<!-- End Navbar -->
+
+</body>
+</html>
